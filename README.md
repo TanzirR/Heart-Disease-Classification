@@ -1,6 +1,6 @@
 # Heart Disease Classification using Machine Learning
 
-This project evaluates the performance of multiple machine learning classification models in predicting heart disease using a real-world dataset. We implemented and compared four popular models: **Random Forest**, **Support Vector Machine (SVM)**, **Logistic Regression**, and **Naive Bayes**.
+This project evaluates the performance of multiple machine learning classification models in predicting heart disease using a real-world dataset. Implemented and compared four popular models: **Random Forest**, **Support Vector Machine (SVM)**, **Logistic Regression**, and **Naive Bayes**.
 
 ## 📊 Objective
 
