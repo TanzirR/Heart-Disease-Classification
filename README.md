@@ -75,7 +75,7 @@ The models are trained on a heart disease dataset and evaluated using various me
 
 <img width="375" height="364" alt="cv 5 fold" src="https://github.com/user-attachments/assets/0737d33d-438a-4668-9eec-eabf5490af19" />
 
-<img width="475" height="464" alt="accuracy 5 fold" src="https://github.com/user-attachments/assets/f729e728-dd23-4a9b-b873-320243b69eed" />
+<img width="675" height="664" alt="accuracy 5 fold" src="https://github.com/user-attachments/assets/f729e728-dd23-4a9b-b873-320243b69eed" />
 
 
 | Model              | Accuracy (%) | Precision | Recall | F1 Score |
@@ -89,7 +89,7 @@ The models are trained on a heart disease dataset and evaluated using various me
 
 <img width="375" height="364" alt="cv 10 fold" src="https://github.com/user-attachments/assets/85b6c6e9-0c61-4017-b5f0-d4a21f1e804b" />
 
-<img width="475" height="464" alt="accuracy 10 fold" src="https://github.com/user-attachments/assets/3888b112-a5af-4649-83ee-90e5ced3f51f" />
+<img width="675" height="664" alt="accuracy 10 fold" src="https://github.com/user-attachments/assets/3888b112-a5af-4649-83ee-90e5ced3f51f" />
 
 
 | Model              | Accuracy (%) | Precision | Recall | F1 Score |
