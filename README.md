@@ -105,8 +105,8 @@ pip install numpy pandas matplotlib scikit-learn
 ### Running the Project
 1. Clone this repository:
 ```bash
-git clone [your-repository-url]
-cd heart-disease-classification
+git clone https://github.com/TanzirR/Heart-Disease-Classification.git
+cd Heart-Disease-Classification
 ```
 
 2. Ensure you have the `heart.csv` dataset in the project directory
