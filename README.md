@@ -21,7 +21,21 @@ The models are trained on a heart disease dataset and evaluated using various me
 
 ## 📁 Dataset
 
-The project uses the `heart.csv` dataset containing various medical indicators and patient information to predict heart disease occurrence.
+- Source: [Kaggle - Heart Failure Prediction](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
+- Total Instances: 918
+- Features: 11 clinical features including:
+  - Age
+  - Sex
+  - Chest Pain Type
+  - Resting Blood Pressure
+  - Cholesterol
+  - Fasting Blood Sugar
+  - Resting ECG
+  - Max Heart Rate
+  - Exercise-induced Angina
+  - Oldpeak
+  - ST Slope
+- Target: Binary classification (0 - Normal, 1 - Heart Disease)
 
 ### Data Preprocessing
 - Label encoding for categorical variables
@@ -57,14 +71,23 @@ The project uses the `heart.csv` dataset containing various medical indicators a
 
 ## 📈 Results
 
-### Model Performance (10-Fold Cross Validation)
+🔁 5-Fold Cross Validation
 
-| Model | Accuracy (%) |
-|-------|-------------|
-| Random Forest | 85.28 |
-| Naive Bayes | 84.50 |
-| SVM | 83.32 |
-| Logistic Regression | 83.00 |
+| Model              | Accuracy (%) | Precision | Recall | F1 Score |
+|-------------------|--------------|-----------|--------|----------|
+| Random Forest      | 84.00        | 0.84      | 0.86   | 0.85     |
+| Logistic Regression| 80.61        | 0.85      | 0.81   | 0.82     |
+| Naive Bayes        | 83.11        | 0.86      | 0.84   | 0.84     |
+| SVM                | 81.70        | 0.85      | 0.82   | 0.83     |
+
+### 🔁 10-Fold Cross Validation
+
+| Model              | Accuracy (%) | Precision | Recall | F1 Score |
+|-------------------|--------------|-----------|--------|----------|
+| Random Forest      | **85.28**    | 0.85      | 0.88   | 0.87     |
+| Logistic Regression| 83.00        | 0.85      | 0.84   | 0.84     |
+| Naive Bayes        | 84.50        | 0.87      | 0.86   | 0.86     |
+| SVM                | 83.32        | 0.85      | 0.85   | 0.85     |
 
 ### Key Findings
 - **Random Forest** achieved the highest accuracy at 85.28%
@@ -134,32 +157,12 @@ The project includes several visualization components:
 └── requirements.txt                               # Dependencies (if needed)
 ```
 
-## 🚀 Future Improvements
-
-- Implement additional algorithms (XGBoost, Neural Networks)
-- Feature importance analysis
-- ROC curve analysis and AUC scores
-- Ensemble methods combining multiple models
-- Deep learning approaches
-- Real-time prediction interface
-
-## 👥 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a Pull Request
-
-## 📜 License
-
-This project is available under the MIT License. See LICENSE file for more details.
-
 ## 🙏 Acknowledgments
 
-- Dataset providers for the heart disease dataset
-- Scikit-learn community for excellent machine learning tools
-- Contributors to the open-source libraries used in this project
+1. Mohan, S., Thirumalai, C., & Srivastava, D. G. (2019). *Effective Heart Disease Prediction Using Hybrid Machine Learning Techniques*, IEEE Access.  
+2. World Health Organization – [Cardiovascular Diseases](https://www.who.int/health-topics/cardiovascular-diseases#tab=tab_1)  
+3. [Kaggle Heart Failure Dataset](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
+
 
 ## 📞 Contact
 
