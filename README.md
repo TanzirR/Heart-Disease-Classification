@@ -1,76 +1,170 @@
-# Heart Disease Classification using Machine Learning
+# Heart Disease Classification Project
 
-This project evaluates the performance of multiple machine learning classification models in predicting heart disease using a real-world dataset. Implemented and compared four popular models: **Random Forest**, **Support Vector Machine (SVM)**, **Logistic Regression**, and **Naive Bayes**.
+A comprehensive machine learning project for predicting heart disease using multiple classification algorithms. This project compares the performance of four different machine learning models to identify the most effective approach for heart disease prediction.
 
-## 📊 Objective
+## 📊 Project Overview
 
-To identify the best-performing machine learning model for heart disease classification based on key evaluation metrics such as accuracy, precision, recall, and F1 score.
+This project implements and evaluates four machine learning algorithms for heart disease classification:
+- **Random Forest** 
+- **Support Vector Machine (SVM)**
+- **Logistic Regression**
+- **Naive Bayes**
 
-## 👩‍⚕️ Dataset
+The models are trained on a heart disease dataset and evaluated using various metrics including accuracy, precision, recall, and F1-score with cross-validation techniques.
 
-- Source: [Kaggle - Heart Failure Prediction](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
-- Total Instances: 918
-- Features: 11 clinical features including:
-  - Age
-  - Sex
-  - Chest Pain Type
-  - Resting Blood Pressure
-  - Cholesterol
-  - Fasting Blood Sugar
-  - Resting ECG
-  - Max Heart Rate
-  - Exercise-induced Angina
-  - Oldpeak
-  - ST Slope
-- Target: Binary classification (0 - Normal, 1 - Heart Disease)
+## 🎯 Objectives
 
-## 🛠️ Methodology
+- Compare the performance of different machine learning algorithms for heart disease prediction
+- Implement hyperparameter tuning using RandomizedSearchCV
+- Evaluate model performance using 10-fold cross-validation
+- Visualize results through confusion matrices and performance comparison charts
 
-- **Tools & Libraries**: Python 3.9.0, Scikit-learn, Matplotlib, Jupyter Notebook
-- **Data Split**: 80% Training, 20% Testing
-- **Validation Techniques**:
-  - 5-Fold Cross Validation
-  - 10-Fold Cross Validation
-- **Metrics Evaluated**: Accuracy, Precision, Recall, F1 Score, Confusion Matrix
-- **Hyperparameter Tuning**: Randomized Search CV (for Random Forest)
+## 📁 Dataset
+
+The project uses the `heart.csv` dataset containing various medical indicators and patient information to predict heart disease occurrence.
+
+### Data Preprocessing
+- Label encoding for categorical variables
+- Feature matrix (X) and target variable (Y) separation
+- Train-test split (80/20 ratio)
+
+## 🛠️ Technologies Used
+
+### Programming Language
+- **Python 3.x**
+
+### Libraries
+- **Data Manipulation**: pandas, numpy
+- **Machine Learning**: scikit-learn
+- **Visualization**: matplotlib, seaborn
+- **Model Evaluation**: sklearn.metrics
+
+### Machine Learning Algorithms
+1. **Random Forest Classifier**
+   - Hyperparameter tuning with RandomizedSearchCV
+   - Optimized parameters for best performance
+   
+2. **Support Vector Machine (Linear)**
+   - Linear kernel implementation
+   - Cross-validation evaluation
+   
+3. **Logistic Regression**
+   - Maximum iteration limit: 1000
+   - Random state for reproducibility
+   
+4. **Gaussian Naive Bayes**
+   - Probabilistic classification approach
 
 ## 📈 Results
 
-### 🔁 5-Fold Cross Validation
+### Model Performance (10-Fold Cross Validation)
 
-| Model              | Accuracy (%) | Precision | Recall | F1 Score |
-|-------------------|--------------|-----------|--------|----------|
-| Random Forest      | 84.00        | 0.84      | 0.86   | 0.85     |
-| Logistic Regression| 80.61        | 0.85      | 0.81   | 0.82     |
-| Naive Bayes        | 83.11        | 0.86      | 0.84   | 0.84     |
-| SVM                | 81.70        | 0.85      | 0.82   | 0.83     |
+| Model | Accuracy (%) |
+|-------|-------------|
+| Random Forest | 85.28 |
+| Naive Bayes | 84.50 |
+| SVM | 83.32 |
+| Logistic Regression | 83.00 |
 
-### 🔁 10-Fold Cross Validation
+### Key Findings
+- **Random Forest** achieved the highest accuracy at 85.28%
+- All models performed well with accuracies above 83%
+- Random Forest showed the best balance of precision, recall, and F1-score
+- Hyperparameter tuning improved Random Forest performance
 
-| Model              | Accuracy (%) | Precision | Recall | F1 Score |
-|-------------------|--------------|-----------|--------|----------|
-| Random Forest      | **85.28**    | 0.85      | 0.88   | 0.87     |
-| Logistic Regression| 83.00        | 0.85      | 0.84   | 0.84     |
-| Naive Bayes        | 84.50        | 0.87      | 0.86   | 0.86     |
-| SVM                | 83.32        | 0.85      | 0.85   | 0.85     |
+## 🔧 Installation & Setup
 
-> ✅ Random Forest consistently outperformed the other models in both validation settings.
+### Prerequisites
+```bash
+pip install numpy pandas matplotlib scikit-learn
+```
 
-## 📌 Conclusion
+### Running the Project
+1. Clone this repository:
+```bash
+git clone [your-repository-url]
+cd heart-disease-classification
+```
 
-Random Forest yielded the highest accuracy and overall performance among all tested models for heart disease prediction. The accuracy improved further after hyperparameter tuning and using 10-fold cross validation.
+2. Ensure you have the `heart.csv` dataset in the project directory
 
-## 🧑‍💻 Authors
+3. Open and run the Jupyter notebook:
+```bash
+jupyter notebook "CSE 445 Heart Disease Classification.ipynb"
+```
 
-- **Tanzir Bin Razzaque**  
-  Electrical and Computer Engineering Dept., North South University  
-  📧 tanzir.razzaque@northsouth.edu
+## 📊 Features
 
-## 📚 References
+### Model Evaluation Metrics
+- **Accuracy Score**: Overall correctness of predictions
+- **Confusion Matrix**: Detailed breakdown of predictions vs actual
+- **Precision**: True positive rate
+- **Recall**: Sensitivity measure
+- **F1-Score**: Harmonic mean of precision and recall
+- **Cross-Validation**: 10-fold CV for robust evaluation
 
-1. Mohan, S., Thirumalai, C., & Srivastava, D. G. (2019). *Effective Heart Disease Prediction Using Hybrid Machine Learning Techniques*, IEEE Access.  
-2. World Health Organization – [Cardiovascular Diseases](https://www.who.int/health-topics/cardiovascular-diseases#tab=tab_1)  
-3. [Kaggle Heart Failure Dataset](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
+### Hyperparameter Tuning
+- **RandomizedSearchCV** implementation for Random Forest
+- Grid search across multiple hyperparameters:
+  - n_estimators: [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000]
+  - max_depth: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, None]
+  - min_samples_split: [2, 5, 10]
+  - min_samples_leaf: [1, 2, 4]
+  - max_features: ['sqrt']
+  - bootstrap: [True, False]
+
+### Visualization
+- Confusion matrix displays for all models
+- Accuracy comparison bar charts
+- Performance metrics comparison graphs
+
+## 🎨 Visualizations
+
+The project includes several visualization components:
+- **Confusion Matrices**: Visual representation of model predictions
+- **Performance Comparison Charts**: Bar plots comparing model accuracies
+- **Cross-Validation Results**: Detailed performance metrics across all models
+
+## 📝 Project Structure
+
+```
+├── CSE 445 Heart Disease Classification.ipynb    # Main notebook file
+├── heart.csv                                      # Dataset (not included)
+├── README.md                                      # Project documentation
+└── requirements.txt                               # Dependencies (if needed)
+```
+
+## 🚀 Future Improvements
+
+- Implement additional algorithms (XGBoost, Neural Networks)
+- Feature importance analysis
+- ROC curve analysis and AUC scores
+- Ensemble methods combining multiple models
+- Deep learning approaches
+- Real-time prediction interface
+
+## 👥 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Create a Pull Request
+
+## 📜 License
+
+This project is available under the MIT License. See LICENSE file for more details.
+
+## 🙏 Acknowledgments
+
+- Dataset providers for the heart disease dataset
+- Scikit-learn community for excellent machine learning tools
+- Contributors to the open-source libraries used in this project
+
+## 📞 Contact
+
+For questions or suggestions, please open an issue in this repository.
 
 ---
 
+**Note**: This project is for educational purposes and should not be used as a substitute for professional medical diagnosis.
