@@ -71,7 +71,7 @@ The models are trained on a heart disease dataset and evaluated using various me
 
 ## 📈 Results
 
-🔁 5-Fold Cross Validation
+### 🔁 5-Fold Cross Validation
 
 <div style="display: flex; gap: 10px;">
   <img width="375" height="364" alt="cv 5 fold" src="https://github.com/user-attachments/assets/0737d33d-438a-4668-9eec-eabf5490af19" />
