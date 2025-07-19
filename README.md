@@ -152,17 +152,10 @@ jupyter notebook "CSE 445 Heart Disease Classification.ipynb"
 - Accuracy comparison bar charts
 - Performance metrics comparison graphs
 
-## 🎨 Visualizations
-
-The project includes several visualization components:
-- **Confusion Matrices**: Visual representation of model predictions
-- **Performance Comparison Charts**: Bar plots comparing model accuracies
-- **Cross-Validation Results**: Detailed performance metrics across all models
-
 ## 📝 Project Structure
 
 ```
-├── CSE 445 Heart Disease Classification.ipynb    # Main notebook file
+├── CSE 445 Heart Disease Classification.ipynb     # Main notebook file
 ├── heart.csv                                      # Dataset
 ├── README.md                                      # Project documentation
 └── requirements.txt                               # Dependencies (if needed)
@@ -170,14 +163,11 @@ The project includes several visualization components:
 
 ## 🙏 Acknowledgments
 
-1. Mohan, S., Thirumalai, C., & Srivastava, D. G. (2019). *Effective Heart Disease Prediction Using Hybrid Machine Learning Techniques*, IEEE Access.  
-2. World Health Organization – [Cardiovascular Diseases](https://www.who.int/health-topics/cardiovascular-diseases#tab=tab_1)  
+1. Mohan, S., Thirumalai, C., & Srivastava, D. G. (2019). *Effective Heart Disease Prediction Using Hybrid Machine Learning Techniques*, IEEE Access. 
 3. [Kaggle Heart Failure Dataset](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
 
 
 ## 📞 Contact
-
-For questions or suggestions, please open an issue in this repository.
 
 - **GitHub:** [TanzirR](https://github.com/TanzirR)
 - **Email:** [tanzir.razzaque@northsouth.edu](mailto:tanzir.razzaque@northsouth.edu)
