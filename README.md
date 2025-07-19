@@ -73,6 +73,11 @@ The models are trained on a heart disease dataset and evaluated using various me
 
 🔁 5-Fold Cross Validation
 
+<img width="375" height="364" alt="cv 5 fold" src="https://github.com/user-attachments/assets/0737d33d-438a-4668-9eec-eabf5490af19" />
+
+<img width="712" height="352" alt="accuracy 5 fold" src="https://github.com/user-attachments/assets/f729e728-dd23-4a9b-b873-320243b69eed" />
+
+
 | Model              | Accuracy (%) | Precision | Recall | F1 Score |
 |-------------------|--------------|-----------|--------|----------|
 | Random Forest      | 84.00        | 0.84      | 0.86   | 0.85     |
@@ -81,6 +86,11 @@ The models are trained on a heart disease dataset and evaluated using various me
 | SVM                | 81.70        | 0.85      | 0.82   | 0.83     |
 
 ### 🔁 10-Fold Cross Validation
+
+<img width="375" height="364" alt="cv 10 fold" src="https://github.com/user-attachments/assets/85b6c6e9-0c61-4017-b5f0-d4a21f1e804b" />
+
+<img width="712" height="352" alt="accuracy 10 fold" src="https://github.com/user-attachments/assets/3888b112-a5af-4649-83ee-90e5ced3f51f" />
+
 
 | Model              | Accuracy (%) | Precision | Recall | F1 Score |
 |-------------------|--------------|-----------|--------|----------|
@@ -168,6 +178,8 @@ The project includes several visualization components:
 
 For questions or suggestions, please open an issue in this repository.
 
+- **GitHub:** [TanzirR](https://github.com/TanzirR)
+- **Email:** [tanzir.razzaque@northsouth.edu](mailto:tanzir.razzaque@northsouth.edu)
 ---
 
 **Note**: This project is for educational purposes and should not be used as a substitute for professional medical diagnosis.
