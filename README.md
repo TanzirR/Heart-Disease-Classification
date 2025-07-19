@@ -108,21 +108,44 @@ The models are trained on a heart disease dataset and evaluated using various me
 
 ## 🔧 Installation & Setup
 
-### Prerequisites
+### Virtual Environment Setup 
+
+**For Windows:**
 ```bash
-pip install numpy pandas matplotlib scikit-learn
+# Create virtual environment
+python -m venv heart_disease_env
+
+# Activate virtual environment
+heart_disease_env\Scripts\activate
+```
+
+**For macOS/Linux:**
+```bash
+# Create virtual environment
+python3 -m venv heart_disease_env
+
+# Activate virtual environment
+source heart_disease_env/bin/activate
 ```
 
 ### Running the Project
+
 1. Clone this repository:
 ```bash
 git clone https://github.com/TanzirR/Heart-Disease-Classification.git
 cd Heart-Disease-Classification
 ```
 
-2. Ensure you have the `heart.csv` dataset in the project directory
+2. Create and activate virtual environment (see above)
 
-3. Open and run the Jupyter notebook:
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Ensure you have the `heart.csv` dataset in the project directory
+
+5. Open and run the Jupyter notebook:
 ```bash
 jupyter notebook "CSE 445 Heart Disease Classification.ipynb"
 ```
