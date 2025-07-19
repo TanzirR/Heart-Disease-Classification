@@ -163,7 +163,7 @@ The project includes several visualization components:
 
 ```
 ├── CSE 445 Heart Disease Classification.ipynb    # Main notebook file
-├── heart.csv                                      # Dataset (not included)
+├── heart.csv                                      # Dataset
 ├── README.md                                      # Project documentation
 └── requirements.txt                               # Dependencies (if needed)
 ```
