@@ -75,7 +75,7 @@ The models are trained on a heart disease dataset and evaluated using various me
 
 <img width="375" height="364" alt="cv 5 fold" src="https://github.com/user-attachments/assets/0737d33d-438a-4668-9eec-eabf5490af19" />
 
-<img width="675" height="664" alt="accuracy 5 fold" src="https://github.com/user-attachments/assets/f729e728-dd23-4a9b-b873-320243b69eed" />
+<img width="575" height="564" alt="accuracy 5 fold" src="https://github.com/user-attachments/assets/f729e728-dd23-4a9b-b873-320243b69eed" />
 
 
 | Model              | Accuracy (%) | Precision | Recall | F1 Score |
