@@ -186,9 +186,7 @@ jupyter notebook "CSE 445 Heart Disease Classification.ipynb"
 
 ## 🙏 Acknowledgments
 
-1. Mohan, S., Thirumalai, C., & Srivastava, D. G. (2019). *Effective Heart Disease Prediction Using Hybrid Machine Learning Techniques*, IEEE Access. 
-3. [Kaggle Heart Failure Dataset](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
-
+ [Kaggle Heart Failure Dataset](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
 
 ## 📞 Contact
 
